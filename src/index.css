@@ -1,0 +1,21 @@
+.BarraNav {
+    background-color: #001731;
+}
+
+.BarraNavegacion a img{
+    width: 90px;
+    height: auto;
+}
+
+.navbar-nav li a {
+    color:azure
+}
+
+.navbar-nav li a:hover {
+    color: #A3FF71;
+}
+
+.botonCarrito a img{
+    width: 15px;
+    height: auto;
+}
