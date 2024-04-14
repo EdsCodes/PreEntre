@@ -15,6 +15,10 @@
     color: #A3FF71;
 }
 
+.itemsBarraNav {
+    margin-right: 45px;
+}
+
 .botonCarrito a img{
     width: 15px;
     height: auto;
