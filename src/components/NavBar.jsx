@@ -5,15 +5,15 @@ const NavBar = () => {
     return (
         <div className="container-fluid BarraNav">
             <nav className="row navbar navbar-expand-lg bg-body-light">
-                <div className="container d-flex justify-content-between BarraNavegacion">
+                <div className="container d-flex justify-content-between align-items-center BarraNavegacion">
                     <a className="navbar-brand" href="#">
                         <img src={logo} alt="Logo Electro Store" />
                     </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
+                    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span className="navbar-toggler-icon"></span>
                     </button>
-                    <div className="collapse navbar-collapse d-flex justify-content-end itemsBarraNav" id="navbarNavAltMarkup">
-                        <ul className="navbar-nav">
+                    <div className="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                        <ul className="navbar-nav itemsBarraNav">
                             <li className="nav-item">
                                 <a className="nav-link" aria-current="page" href="#">Inicio</a>
                             </li>
@@ -28,7 +28,9 @@ const NavBar = () => {
                             </li>
                         </ul>
                     </div>
-                    <CartWidget />
+                    <div className="d-flex align-items-center">
+                        <CartWidget />
+                    </div>
                 </div>
             </nav>
         </div>
@@ -36,3 +38,4 @@ const NavBar = () => {
 };
 
 export default NavBar;
+
